@@ -1,0 +1,62 @@
+Analizar el código y estructura del sitio
+2. Comenta las malas prácticas en el sitio
+
+SITIO
+-No se puede navegar el sitio fácilmente, porque el menu que permite la navegación esta guardado
+por lo que cuesta un poco de trabajo y lleva mas tiempo. 
+-El diseño de las páginas para todo el sitio es el mismo hace falta hacer cambios en la arquitectura
+y diseño de la pagina para hacerla más atractiva e interactiva ya que cada página parece la copia
+de la otro. 
+-En la parte del test al realizarlo el usuario espera recibir retroalimentación de las opciones 
+elegidas y por el contrario es molesto recibir al final del test la ventana de que debes acudir 
+a cita, nos engañaron para responder algo que no va a dar un resultado. 
+-La página web en general presenta poco contenido, y todo estructurado de manera similar. 
+-En la página de tipos de piel seria conveniente que al dar click en la imagen se muestre ahi mismo 
+el contenido de la descripción del tipo de piel, no que te envie a otra página ya que para 
+ver el tipo de piel debes regresar a la página anterior lo cual vuelve a la página compleja para 
+el usuario.
+-Las imagenes en la página test son la misma estaria bien colocar una imagen que represente cada opcion
+asi como una descripcion de la referencia porque no siempre sabemos las caracteristicas de nuestra
+piel por eso acudir con el experto.
+
+CODIGO 
+-La forma de organizar el codigo resulta dificil comprender ya que no esta seccionado para saber donde 
+acaba o inicia cada sección de la página. 
+-Falta comentar el código
+-Hacen mucho uso de los contenedores genericos div
+-Los archivos de css vienen saturados de codigo quiza resulte más eficiente dividir el codigo en 
+más archivos css.
+-Se puede codificar por capas para facilitar el paso de la información. 
+-Al hacer el cambio entre las paginas del sitio se demora unos segundos en cargar lo cual no se ve bien.
+-Podría tratar de simplificar el codigo. 
+-Hacer repetición del codigo. 
+-Se deben colocar las etiquetas en archivos script
+-La pagina debe diseñarse pensando en que sera buscada por el navegador incluyendo metadatos relevantes
+-Agregar contenido en la etiqueta alt de las imagenes. 
+-Se debe considerar el uso de descripcion de los contenidos en cada atributo que se use para tener 
+la referencia. 
+-Falta agrupar las secciones relevantes del sitio para resaltar el contenido de esa información.
+-Una mala practica es no reducir el numero de elementos usados lo cual vuelve el codigo extenso.
+-Usar elementos semanticos principalmente en cabeceras y pie de paginas. 
+-crear hojas de estilos y no en la página html
+
+3. Comprender la funcionalidad del test (página test.html) presentada (crea-test.js, test.js, control.js)
+
+test solo pinta el encabezado, barra de navegacion, titulo, la parte del boton del final y pie de pagina
+
+crea-test es la pagina que genera el contenido de la prueba y los contenedores de las respuestas a las preguntas
+que hacen el llamado al contenido del archivo test para mostrar las respuestas al usuario de acuerdo 
+a los eventos que haga el usuario es decir al ir seleccionando la pregunta. Tambien permite seleccionar 
+y mostrar los datos seleccionados por el usuario en cada respuesta.
+
+test contiene los arreglos con las descripciones de cada seleccion de las preguntas que se presentan
+en el cuestionario las cuales son usadas en el archivo anterior.
+
+control le da el funcionamiento al boton 
+Lleva un contador que se va actualizando cada vez que el usuario contesta una pregunta para
+que al final de responder todas, el usuario pueda seleccionar el boton y lo envie a la pagina con la 
+descripcion pero si no ha finalizado con todas le mande una observacion que no ha terminado.
+Hace la verificacion de respuestas y se compara con los valores almacenados y si tiene un resultado 
+lo manda a la pagina, si no solo indica con un mensaje acudir a cita.
+
+
